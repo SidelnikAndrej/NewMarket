@@ -5,7 +5,6 @@ package com.company;
  */
 public interface Client {
 
-    int layOutGoods ();
+    int purchaseOfGoods ();
 
-    int giveMoney ();
 }

@@ -5,11 +5,5 @@ package com.company;
  */
 public interface Paymaster {
 
-    int scanProduct ();
-
-    int sayAmount ();
-
-    int calculateMoney();
-
-    int giveChange();
+    int saleOfGoods ();
 }

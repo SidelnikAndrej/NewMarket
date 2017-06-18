@@ -5,12 +5,7 @@ package com.company;
  */
 public class RandomClient extends RandomHuman implements Client {
     @Override
-    public int layOutGoods() {
-        return returnRandTime();
-    }
-
-    @Override
-    public int giveMoney() {
+    public int purchaseOfGoods() {
         return returnRandTime();
     }
 }

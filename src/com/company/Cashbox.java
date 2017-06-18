@@ -24,12 +24,8 @@ public class Cashbox implements Runnable{
         int resaltTime = 0;
         Client customer;
         while ((customer = queueClient.poll()) != null){
-            resaltTime += customer.layOutGoods();
-            resaltTime += seller.scanProduct();
-            resaltTime += seller.sayAmount();
-            resaltTime += customer.giveMoney();
-            resaltTime += seller.calculateMoney();
-            resaltTime += seller.giveChange();
+            resaltTime += customer.purchaseOfGoods();
+            resaltTime += seller.saleOfGoods();
             numberClient++;
         }
         System.out.println(
